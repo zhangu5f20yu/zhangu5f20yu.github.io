@@ -1,0 +1,123 @@
+#header {
+  height: 50px;
+  background-color: #ff841d;
+}
+#header .m-h-logo {
+  float: left;
+  padding: 10px;
+}
+#header .m-h-logo > a {
+  display: inline-block;
+  height: 100%;
+}
+#header .m-h-logo > a > img {
+  max-height: 26px;
+}
+#header .m-h-app {
+  float: right;
+}
+#header .m-h-app > a {
+  height: 50px;
+  width: 50px;
+  padding-top: 5px;
+  padding-left: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#header .m-h-app > a > img {
+  max-width: 35px;
+}
+#search {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+#search > .m-search {
+  position: relative;
+}
+#search input:first-child {
+  width: 95%;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  padding-left: 5%;
+  background-color: #f1f1f1;
+  color: #aaaaaa;
+  border: 0;
+  font-size: 16px;
+}
+#search input:last-child {
+  position: absolute;
+  right: 0;
+  border: 0;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  background-color: #ff841d;
+  border-radius: 15px;
+  color: #fff;
+}
+.copTxt {
+  height: 38px;
+  line-height: 38px;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+}
+.hot {
+  height: 40px;
+  line-height: 40px;
+  background-color: #dddddd;
+  color: #e38d13;
+  border: 1px solid #aaaaaa;
+  margin: 5px 0;
+  font-size: 18px;
+  padding-left: 10px;
+}
+#footer {
+  background-color: #f1f1f1;
+}
+#footer > .foo-nav {
+  height: 35px;
+  line-height: 35px;
+  background-color: #ff841d;
+  color: #fff;
+  padding: 0 10px;
+}
+#footer > .foo-nav > a:first-child {
+  font-size: 18px;
+  float: left;
+  color: #fff;
+}
+#footer > .foo-nav > a:last-child {
+  float: right;
+}
+#footer > .foo-nav > a:last-child > img {
+  width: 20px;
+}
+#footer > .foo-btnBox {
+  margin-top: 30px;
+}
+#footer > .foo-btnBox > li {
+  width: 33.33%;
+  float: left;
+  border: 1px solid #cccccc;
+}
+#footer > .foo-btnBox > li > a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #3c3c3c;
+}
+#footer > .foo-btnBox > li:last-child > a > img {
+  vertical-align: middle;
+  margin-top: -6px;
+}
+#footer > .foo-txt {
+  text-align: center;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+#footer > .foo-txt a {
+  color: #f00;
+}

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/gsproduct.css"/>
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>比价</title>
+</head>
+<body>
+
+<!--头部-->
+<header id="header">
+    <div class="m-h-logo">
+        <a href="./index.html"><img src="./images/header_logo.png" alt=""/></a>
+    </div>
+    <div class="m-h-app">
+        <a href="#"><img src="./images/header_app.png" alt=""/></a>
+    </div>
+</header>
+<!--搜索-->
+<section id="search">
+    <div class="m-search">
+        <input type="text" placeholder="请输入你想比价的商品"/>
+        <input type="button" value="搜索"/>
+    </div>
+</section>
+
+<!--中间部分-->
+<div id="proCont">
+    <div class="pro-nav clearfix">
+        <div class="p-nav-left">
+            <!--<span><a href="###">首页></a></span>
+            <span><a href="###">全部分类></a></span>
+            <span><a href="###">电视></a></span>-->
+        </div>
+        <a href="###"><input type="button" value="筛选"/></a>
+    </div>
+    <div class="gp-contTxt">
+        <p>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</p>
+    </div>
+    <div class="gp-img">
+        <!--<img src="./images/gengduo.png" alt=""/>-->
+        <a href="###" class="pro-sc"><img src="./images/pro-sc.jpg" alt=""/></a>
+    </div>
+
+</div>
+<!--商品来源-->
+<div class="pro-source">
+    <div class="shange">
+        <div class="row">
+            <div class="col-xs-4">比价购买</div>
+            <div class="col-xs-4">产品参数</div>
+            <div class="col-xs-4">评论<span></span></div>
+        </div>
+    </div>
+</div>
+<!--比价-->
+<div class="pro-shop">
+
+</div>
+<div class="point">
+    <p> * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+</div>
+<!--评价-->
+<div class="pro-cmt-title">
+    网友评价
+</div>
+<div class="pro-comment">
+   <!-- <div class="row">
+        <div class="col-xs-6">1</div>
+        <div class="col-xs-6">2</div>
+    </div>
+    <div class="comment-source">1</div>
+    <div class="comment-txt">1234</div>-->
+</div>
+<div class="more">
+    <input type="button" value="查看更多评价"/>
+</div>
+
+
+<!--底部-->
+<section id="footer">
+
+    <ul class="foo-btnBox clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="javascript:scroll(0,0)">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+            返回顶部</a></li>
+    </ul>
+    <div class="foo-txt">
+        <p>
+            <a href="#">手机APP下载</a>
+            慢慢买手机版 == 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+
+
+<script type="text/html" id="comment">
+{{each result as value}}
+<div class="row">
+    <div class="col-xs-6">{{value.comName}}</div>
+    <div class="col-xs-6">{{value.comTime}}</div>
+</div>
+<div class="comment-source">{{value.comFrom}}</div>
+<div class="comment-txt">{{value.comContent}}</div>
+{{/each}}
+</script>
+
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/gsproduct.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+#proCont > .pro-nav {
+  height: 40px;
+  background-color: #f1f1f1;
+  padding: 0 10px;
+  border-bottom: 1px solid #cccccc;
+}
+#proCont > .pro-nav > .p-nav-left {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+}
+#proCont > .pro-nav > .p-nav-left > a {
+  font-size: 16px;
+}
+#proCont > .pro-nav > .p-nav-left > a:hover {
+  color: #000;
+}
+#proCont > .pro-nav > a {
+  margin-top: 5px;
+  float: right;
+  display: block;
+  width: 50px;
+  height: 35px;
+  line-height: 30px;
+}
+#proCont > .pro-nav > a > input {
+  width: 60px;
+  height: 30px;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  border: 1px solid #cccccc;
+}
+#proCont > .gp-contTxt {
+  padding: 0 40px;
+}
+#proCont > .gp-contTxt > p {
+  text-align: center;
+  font-size: 30px;
+}
+#proCont > .gp-img {
+  text-align: center;
+  height: 180px;
+  position: relative;
+}
+#proCont > .gp-img > .pro-sc {
+  display: block;
+  width: 40px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+#proCont > .gp-img > .pro-sc > img {
+  height: 39px;
+}
+.pro-source > .shange > .row {
+  text-align: center;
+  margin: 0;
+}
+.pro-source > .shange > .row div:nth-of-type(2) {
+  border-left: 2px solid #e92322;
+  border-right: 2px solid #e92322;
+}
+.pro-source > .shange > .row > .col-xs-4 {
+  height: 40px;
+  line-height: 40px;
+  background-color: #ff841d;
+  color: #fff;
+}
+.pro-shop {
+  height: 50px;
+  line-height: 50px;
+}
+.pro-shop > table > tbody > tr {
+  border-bottom: 1px solid #cccccc;
+}
+.pro-shop > table > tbody > tr td:nth-of-type(1) {
+  text-align: right;
+  padding-right: 8px;
+}
+.pro-shop > table > tbody > tr td:nth-of-type(3) {
+  padding-right: 8px;
+  text-align: right;
+  color: #f00;
+}
+.point {
+  height: 30px;
+  line-height: 35px;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+.pro-cmt-title {
+  border-top: 2px solid #3c3c3c;
+  height: 40px;
+  line-height: 40px;
+  background-color: #aaaaaa;
+  text-align: center;
+}
+.pro-comment {
+  padding: 10px;
+  border-top: 1px solid #cccccc;
+}
+.pro-comment > .row {
+  font-size: 12px;
+  color: #3c3c3c;
+  margin: 0;
+}
+.pro-comment > .row div:nth-of-type(2) {
+  text-align: right;
+}
+.pro-comment > .comment-source {
+  font-size: 12px;
+  color: #3c3c3c;
+  text-align: right;
+}
+.more {
+  padding: 0 10px;
+  margin-top: 20px;
+}
+.more > input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 14px;
+  border: 0;
+}

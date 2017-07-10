@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/baicaijia.css"/>
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>白菜价</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div class="row">
+        <div class="col-xs-2 icon-back"><a href="###">＜</a></div>
+        <div class="col-xs-8 m-h-logo">白菜价-淘宝内部券</div>
+        <div class="col-xs-2 m-h-app"><a href="#"><img src="./images/header_app.png" alt=""/></a></div>
+    </div>
+</header>
+
+<div>
+    <div class="content">
+        <div class="bcjNav">
+            <ul class="hua clearfix">
+               <!-- <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">1</a></li>-->
+            </ul>
+        </div>
+        <div class="search">
+            <span></span>
+        </div>
+        <ul class="bjc-cont">
+               <!-- <li>
+                    <a href="#">
+                        <div class="cont-pic">
+                            <img src="./images/cont-pic.jpg" alt=""/>
+                        </div>
+                        <div class="cont-right">
+                            <div class="cont-r-top">
+                                悬赏爆料 618爆料有机会拿京东100元E卡
+                                <p>￥11 &nbsp<s>30</s></p>
+                                <span>1%</span><span></span>
+                            </div>
+                            <div class="cont-r-bottom clearfix">
+                                <span class="cont-time">慢慢买 | 06-17 00:00</span>
+                            <span class="cont-comment">
+                                <i class="icon-comment"></i>27
+                            </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>-->
+        </ul>
+    </div>
+</div>
+
+<!--底部-->
+<div class="back">
+    <a href="javascript:scroll(0,0)"><span class="glyphicon glyphicon-open"></span></a>
+</div>
+<section id="footer">
+    <ul class="foo-btnBox clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="javascript:scroll(0,0)">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+            返回顶部</a></li>
+    </ul>
+    <div class="foo-txt">
+        <p>
+            <a href="#">手机APP下载</a>
+            慢慢买手机版 == 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+
+
+<script type="text/html" id="nav">
+{{each result as value}}
+<li data-titleid={{value.titleId}}><a href="javascript:;">{{value.title}}</a></li>
+{{/each}}
+</script>
+<script type="text/html" id="bcjPro">
+{{each result as value}}
+            <li class="clearfix">
+                <div class="img">
+                    {{#value.productImg}}
+                </div>
+                    <div class="cont-right">
+                            {{#value.productName}}
+                            <p>{{#value.productPrice}}</p>
+                            {{#value.productCouponRemain}}
+                            <span>{{#value.productCoupon}}</span>
+                            <span>{{#value.productHref}}</span>
+                    </div>
+            </li>
+{{/each}}
+</script>
+
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/template.js"></script>
+<script src="./js/baicaijia.js"></script>
+</body>
+</html>

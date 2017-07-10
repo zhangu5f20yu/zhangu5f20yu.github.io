@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/moneyctrl.css"/>
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>省钱控</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div class="row">
+        <div class="col-xs-2 icon-back"><a href="###">＜</a></div>
+        <div class="col-xs-8 m-h-logo">省钱控-最新优惠</div>
+        <div class="col-xs-2 m-h-app"><a href="#"><img src="./images/header_app.png" alt=""/></a></div>
+    </div>
+</header>
+<!--商品推荐-->
+<section id="recommen">
+    <ul class="m-r-cont">
+        <!--<li>
+            <a href="#">
+                <div class="cont-pic">
+                    <img src="./images/cont-pic.jpg" alt=""/>
+                </div>
+                <div class="cont-right">
+                    <div class="cont-r-top">
+                        悬赏爆料 618爆料有机会拿京东100元E卡
+                        <span>手机也能参与爆料哦</span>
+                    </div>
+                    <div class="cont-r-bottom clearfix">
+                        <span class="cont-time">慢慢买 | 06-17 00:00</span>
+                    <span class="cont-comment">
+                        <i class="icon-comment"></i>27
+                    </span>
+                    </div>
+                </div>
+            </a>
+        </li>-->
+    </ul>
+    <div class="pageBtn">
+        <div class="row">
+            <div class="col-xs-4"><input type="button" value="上一页" class="up"/></div>
+            <div class="col-xs-4" id="page"><select class="page">
+                <!--<option value="">第1页</option>-->
+                <!--<option value="">第2页</option>-->
+                <!--<option value="">第3页</option>-->
+            </select></div>
+            <div class="col-xs-4"><input type="button" value="下一页" class="down"/></div>
+        </div>
+    </div>
+</section>
+<!--底部-->
+<section id="footer">
+    <ul class="foo-btnBox clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="javascript:scroll(0,0)">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+            返回顶部</a></li>
+    </ul>
+    <div class="foo-txt">
+        <p>
+            <a href="#">手机APP下载</a>
+            慢慢买手机版 == 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+
+<script type="text/html" id="moneyCont">
+    {{each result as value}}
+    <li>
+        <a href="http://localhost:8080/MobileShopProject/inlanddiscount.html?productid={{value.productId}}">
+            <div class="cont-pic">
+                {{#value.productImgSm}}
+            </div>
+            <div class="cont-right">
+                <div class="cont-r-top">
+                    {{#value.productName}}
+                    <span>{{#value.productPinkage}}</span>
+                </div>
+                <div class="cont-r-bottom clearfix">
+                    <span class="cont-time">{{#value.productFrom}} | {{#value.productTime}}</span>
+                <span class="cont-comment">
+                    <i class="icon-comment"></i>{{#value.productComCount}}
+                </span>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+
+
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/template.js"></script>
+<script src="./js/moneyctrl.js"></script>
+</body>
+</html>

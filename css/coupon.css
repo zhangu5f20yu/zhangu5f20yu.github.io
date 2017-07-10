@@ -1,0 +1,96 @@
+#header {
+  height: 50px;
+  background-color: #e4393c;
+}
+#header > .row {
+  margin: 0;
+}
+#header > .col-xs-2 {
+  padding: 0;
+}
+#header .icon-back > a {
+  display: block;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  line-height: 40px;
+}
+#header .m-h-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+#header .m-h-app {
+  text-align: center;
+}
+#header .m-h-app > a {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#header .m-h-app > a > img {
+  max-width: 35px;
+}
+#coupon {
+  margin: 30px 0;
+}
+#coupon > li {
+  float: left;
+  width: 33.33%;
+}
+#coupon > li > a {
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+#coupon > li > a > img {
+  width: 100px;
+}
+#coupon > li > a > p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+.copTxt {
+  height: 38px;
+  line-height: 38px;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+}
+#footer {
+  background-color: #f1f1f1;
+}
+#footer > .foo-btnBox {
+  margin-top: 30px;
+}
+#footer > .foo-btnBox > li {
+  width: 33.33%;
+  float: left;
+  border: 1px solid #cccccc;
+}
+#footer > .foo-btnBox > li > a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #3c3c3c;
+}
+#footer > .foo-btnBox > li:last-child > a > img {
+  vertical-align: middle;
+  margin-top: -6px;
+}
+#footer > .foo-txt {
+  text-align: center;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+#footer > .foo-txt a {
+  color: #f00;
+}

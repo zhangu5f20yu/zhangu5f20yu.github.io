@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/sitenav.css"/>
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>国内折扣</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div class="row">
+        <div class="col-xs-2 icon-back"><a href="###">＜</a></div>
+        <div class="col-xs-8 m-h-logo">国内折扣</div>
+        <div class="col-xs-2 m-h-app"><a href="#"><img src="./images/header_app.png" alt=""/></a></div>
+    </div>
+</header>
+<!--商品详情-->
+<div class="detail">
+    <!--<h3>随便写点什么</h3>
+    <span></span>&nbsp<span></span>&nbsp<span></span>
+    <div class="surround clearfix">
+        <img src="./images/ic_search.png" alt=""/>
+        <p>还是随便写点什么父和安居网女哦啊啥呢无奈覅额窝囊废   粉爱你哇哦ifNowin发 额如风万佛in哦和哦if从i</p>
+    </div>
+    <img src="./images/header_logo.png" alt=""/>-->
+</div>
+<div class="city">
+</div>
+<div class="btn">
+    <input type="button" value="前往购买"/>
+</div>
+<div class="code">
+    <!--<div class="codeImg">
+        <img src="./images/mmbweixin2.png" alt=""/>
+    </div>
+    <div class="codePro">
+        <h4>发表评论</h4>
+        <textarea cols="30" rows="10"></textarea>
+        <input type="button" value="发表评论"/>
+
+    </div>-->
+</div>
+<!--底部-->
+<section id="footer">
+    <ul class="foo-btnBox clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="javascript:scroll(0,0)">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+            返回顶部</a></li>
+    </ul>
+    <div class="foo-txt">
+        <p>
+            <a href="#">手机APP下载</a>
+            慢慢买手机版 == 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+
+
+<script type="text/html" id="detail">
+    {{each result as value}}
+    <h3>{{value.productName}}</h3>
+    <p>{{value.productPrice}}</p>
+    <span>{{value.productFrom}}</span>&nbsp<span>{{value.productTime}}</span>&nbsp<span>{{value.productTips}}</span>
+    <div class="surround clearfix">
+        <p>{{value.productInfo}}</p>
+    </div>
+    <div class="bigImg">
+        {{#value.productImg}}
+    </div>
+    {{/each}}
+</script>
+
+
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/template.js"></script>
+<script src="./js/sitenav.js"></script>
+</body>
+</html>

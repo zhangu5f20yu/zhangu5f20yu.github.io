@@ -1,0 +1,165 @@
+#header {
+  height: 50px;
+  background-color: #ff841d;
+}
+#header .m-h-logo {
+  float: left;
+  padding: 10px;
+}
+#header .m-h-logo > a {
+  display: inline-block;
+  height: 100%;
+}
+#header .m-h-logo > a > img {
+  max-height: 26px;
+}
+#header .m-h-app {
+  float: right;
+}
+#header .m-h-app > a {
+  height: 50px;
+  width: 50px;
+  padding-top: 5px;
+  padding-left: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#header .m-h-app > a > img {
+  max-width: 35px;
+}
+#search {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+#search > .m-search {
+  position: relative;
+}
+#search input:first-child {
+  width: 95%;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  padding-left: 5%;
+  background-color: #f1f1f1;
+  color: #aaaaaa;
+  border: 0;
+  font-size: 16px;
+}
+#search input:last-child {
+  position: absolute;
+  right: 0;
+  border: 0;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  background-color: #ff841d;
+  border-radius: 15px;
+  color: #fff;
+}
+.copTxt {
+  height: 38px;
+  line-height: 38px;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+}
+.hot {
+  height: 40px;
+  line-height: 40px;
+  background-color: #dddddd;
+  color: #e38d13;
+  border: 1px solid #aaaaaa;
+  margin: 5px 0;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.ranking > li {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'><path fill='#999999' d='M746.255255 299.653099 746.33098 299.728824 713.12674 332.933063 713.049992 332.857339 297.859875 748.048479 264.635169 714.82275 679.816077 299.642866 264.635169-115.538041 297.859875-148.762747 713.00906 266.386438 713.085808 266.30969 746.341213 299.567141Z'  transform='translate(0, 812) scale(1, -1)'/></svg>");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: right center;
+}
+.ranking > li > a {
+  display: block;
+  position: relative;
+}
+.ranking > li > a > span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #cccccc;
+  color: #fff;
+  text-align: center;
+}
+.ranking > li > a > .txt {
+  padding-left: 30px;
+}
+.ranking > li > a > .txt > p {
+  margin: 0;
+  font-size: 18px;
+}
+.ranking > li > a > .txt > span {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+.ranking > li:nth-of-type(1) > a > span {
+  background-color: #f00;
+}
+.ranking > li:nth-of-type(2) > a > span {
+  background-color: #e38d13;
+}
+.ranking > li:nth-of-type(3) > a > span {
+  background-color: #77ff4f;
+}
+#footer {
+  background-color: #f1f1f1;
+}
+#footer > .foo-nav {
+  height: 35px;
+  line-height: 35px;
+  background-color: #ff841d;
+  color: #fff;
+  padding: 0 10px;
+}
+#footer > .foo-nav > a:first-child {
+  font-size: 18px;
+  float: left;
+  color: #fff;
+}
+#footer > .foo-nav > a:last-child {
+  float: right;
+}
+#footer > .foo-nav > a:last-child > img {
+  width: 20px;
+}
+#footer > .foo-btnBox {
+  margin-top: 30px;
+}
+#footer > .foo-btnBox > li {
+  width: 33.33%;
+  float: left;
+  border: 1px solid #cccccc;
+}
+#footer > .foo-btnBox > li > a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #3c3c3c;
+}
+#footer > .foo-btnBox > li:last-child > a > img {
+  vertical-align: middle;
+  margin-top: -6px;
+}
+#footer > .foo-txt {
+  text-align: center;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+#footer > .foo-txt a {
+  color: #f00;
+}

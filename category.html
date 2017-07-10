@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/category.css"/>
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>商场导航</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div class="row">
+        <div class="col-xs-2 icon-back"><a href="###">＜</a></div>
+        <div class="col-xs-8 m-h-logo">商场导航</div>
+        <div class="col-xs-2 m-h-app"><a href="#"><img src="./images/header_app.png" alt=""/></a></div>
+    </div>
+</header>
+
+<!--商场-->
+<div class="bigBox">
+    <a href="#">
+        <img src="" alt=""/>
+        1223
+    </a>
+</div>
+
+<div class="copTxt">
+    <a href="#"><span>首页></span></a>
+    <span>优惠券</span>
+</div>
+
+<!--底部-->
+
+<section id="footer">
+    <ul class="foo-btnBox clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="javascript:scroll(0,0)">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+            返回顶部</a></li>
+    </ul>
+    <div class="foo-txt">
+        <p>
+            <a href="#">手机APP下载</a>
+            慢慢买手机版 == 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+
+
+<script type="text/html" id="nav">
+    {{each result as value}}
+    <a href="{{value.navHref}}">
+        <img src="{{value.navImg}}" alt=""/>
+        {{value.navTitle}}
+    </a>
+    {{/each}}
+</script>
+
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/template.js"></script>
+<script src="./js/category.js"></script>
+</body>
+</html>

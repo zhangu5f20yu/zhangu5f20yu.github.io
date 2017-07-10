@@ -1,0 +1,95 @@
+#header {
+  height: 50px;
+  background-color: #ff841d;
+}
+#header > .row {
+  margin: 0;
+}
+#header .icon-back > a {
+  display: block;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  line-height: 40px;
+}
+#header .m-h-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+#header .m-h-app {
+  text-align: center;
+}
+#header .m-h-app > a {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#header .m-h-app > a > img {
+  max-width: 35px;
+}
+.minute .minRow > .col-xs-6 {
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  padding-top: 10px;
+  height: 265px;
+}
+.minute .minRow > .col-xs-6 > a > .minImg {
+  text-align: center;
+}
+.minute .minRow > .col-xs-6 > a > .minImg > img {
+  width: 140px;
+}
+.minute .minRow > .col-xs-6 > a > .minTxt {
+  padding-left: 10px;
+}
+.minute .minRow > .col-xs-6 > a > .minTxt > p {
+  margin: 0;
+}
+.minute .minRow > .col-xs-6 > a > .minTxt > p:nth-of-type(1) {
+  font-size: 16px;
+  min-height: 44px;
+}
+.minute .minRow > .col-xs-6 > a > .minTxt > p:nth-of-type(2) {
+  font-size: 14px;
+  color: #ff841d;
+}
+.minute .minRow > .col-xs-6 > a > .minTxt > span {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+#footer {
+  background-color: #f1f1f1;
+}
+#footer > .foo-btnBox {
+  margin-top: 30px;
+}
+#footer > .foo-btnBox > li {
+  width: 33.33%;
+  float: left;
+  border: 1px solid #cccccc;
+}
+#footer > .foo-btnBox > li > a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #3c3c3c;
+}
+#footer > .foo-btnBox > li:last-child > a > img {
+  vertical-align: middle;
+  margin-top: -6px;
+}
+#footer > .foo-txt {
+  text-align: center;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+#footer > .foo-txt a {
+  color: #f00;
+}

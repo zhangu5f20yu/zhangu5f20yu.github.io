@@ -1,0 +1,3 @@
+The compress option has been deprecated. We recommend you use a dedicated css minifier, for instance see less-plugin-clean-css.
+lessc: failed to create file E:\wamp\Ajax\MobileShopProject
+Error: EISDIR EISDIR: illegal operation on a directory, open 'E:\wamp\Ajax\MobileShopProject'

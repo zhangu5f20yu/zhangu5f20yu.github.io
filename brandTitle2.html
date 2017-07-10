@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon"/>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/brandTitle2.css"/>
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>品牌大全</title>
+</head>
+<body>
+
+<!--头部-->
+<header id="header">
+    <div class="m-h-logo">
+        <a href="./index.html"><img src="./images/header_logo.png" alt=""/></a>
+    </div>
+    <div class="m-h-app">
+        <a href="#"><img src="./images/header_app.png" alt=""/></a>
+    </div>
+</header>
+<!--搜索-->
+<section id="search">
+    <div class="m-search">
+        <input type="text" placeholder="请输入你想比价的商品"/>
+        <input type="button" value="搜索"/>
+    </div>
+</section>
+
+<!--导航-->
+<div class="copTxt">
+    <a href="#"><span>首页></span></a>
+    <span>全部分类</span>
+</div>
+
+<!--标题-->
+<div class="hot">
+    热门品牌排行
+</div>
+
+<!--中间部分-->
+<ul class="m-r-cont">
+    <li>
+        <a href="#">
+            <div class="cont-pic">
+                <img src="./images/cont-pic.jpg" alt=""/>
+            </div>
+            <div class="cont-right">
+                <div class="cont-r-top">
+                    悬赏爆料 618爆料有机会拿京东100元E卡
+                </div>
+                <div class="money">手机也能参与爆料哦</div>
+                <div class="start">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+                <div class="cont-r-bottom clearfix">
+                    <span class="cont-time">慢慢买 | 06-17 00:00</span>
+                <span class="cont-comment">
+                    <i class="icon-comment"></i>27
+                </span>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+
+<div class="hot">
+    最新评论
+</div>
+
+<!--中间部分-->
+<div class="bdPro">
+    <!--<div id="0">
+        <div class="top clearfix">
+            <div class="img">
+                <img src="./images/gengduo.png" alt=""/>
+            </div>
+            <div class="topTxt">随便写点什么</div>
+        </div>
+    </div>
+        <div class="pro-comment">
+            &lt;!&ndash; <div class="row">
+                 <div class="col-xs-6">1</div>
+                 <div class="col-xs-6">2</div>
+             </div>
+             <div class="comment-source">1</div>
+             <div class="comment-txt">1234</div>&ndash;&gt;
+            <div class="start">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+            </div>
+        </div>-->
+
+</div>
+
+
+
+
+<!--底部-->
+<section id="footer">
+    <div class="foo-nav clearfix">
+        <a href="#"><span>品牌排行</span></a>
+        <a href="#"><img src="./images/more.png" alt=""/></a>
+    </div>
+    <ul class="foo-btnBox clearfix">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="javascript:scroll(0,0)">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+            返回顶部</a></li>
+    </ul>
+    <div class="foo-txt">
+        <p>
+            <a href="#">手机APP下载</a>
+            慢慢买手机版 == 掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</section>
+
+<script type="text/html" id="tem">
+{{each result as value}}
+<li>
+    <a href="#{{value.productId}}">
+        <div class="cont-pic">
+            {{#value.productImg}}
+        </div>
+        <div class="cont-right">
+            <div class="cont-r-top">
+                {{value.productName}}
+            </div>
+            <div class="money">{{value.productPrice}}</div>
+            <div class="start">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+            </div>
+            <div class="cont-r-bottom clearfix">
+                <span class="cont-time">{{value.productQuote}}</span>
+                <span class="cont-comment">
+                    {{value.productCom}}
+                </span>
+            </div>
+        </div>
+    </a>
+</li>
+{{/each}}
+</script>
+
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="./js/brandTitle2.js"></script>
+</body>
+</html>
